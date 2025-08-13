@@ -1,0 +1,48 @@
+/* ======== 1. สไตล์โดยรวม (Global Styles) ======== */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;       /* ระยะห่างระหว่างบรรทัด ทำให้อ่านง่าย */
+    background-color: #ffffff; /* สีพื้นหลัง (ขาว) */
+    color: #121212; /* สีตัวอักษร (ดำเกือบสนิท) */
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== 2. การจัดวาง Layout ตรงกลาง ======== */
+/* เราเลือกทุก section ที่อยู่ใน body */
+body > section {
+    max-width: 800px;   /* ความกว้างสูงสุดของเนื้อหา */
+    margin: 40px auto;  /* จัดให้อยู่ตรงกลาง (auto) และเว้นระยะห่างบน-ล่าง (40px) */
+    padding: 20px;      /* ระยะห่างของเนื้อหาข้างในขอบ */
+}
+
+/* ======== 3. สไตล์ของหัวข้อและตัวอักษร ======== */
+
+h1, h2 {
+    color: #000000; /* สีของหัวข้อหลัก (ดำสนิท) */
+    border-bottom: 2px solid #eeeeee; /* สร้างเส้นใต้หัวข้อแบบบางๆ */
+    padding-bottom: 10px;
+}
+
+p {
+    color: #333333; /* สีของเนื้อหาทั่วไป (เทาเข้ม) ให้อ่อนกว่าสีตัวอักษรหลักเล็กน้อย */
+}
+
+/* ======== 4. สไตล์ของลิงก์และส่วนอื่นๆ ======== */
+
+a {
+    color: #000000; /* สีของลิงก์ */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    font-weight: bold; /* ทำให้เป็นตัวหนา */
+}
+
+a:hover {
+    text-decoration: underline; /* เมื่อเอาเมาส์ไปชี้ ให้แสดงเส้นใต้ */
+    padding-left: 20px; /*ขยับรายการเข้ามาเล็กน้อย */
+}
+
+hr {
+    border: none; /* เอากรอบของเส้นคั่นออก */
+    border-top: 1px solid #eeeeee; /* สร้างเส้นคั่นบางๆ สีเทาอ่อน */
+}
