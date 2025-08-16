@@ -24,3 +24,16 @@ greetingButton.addEventListener('click', function() {
         isToggled = false; // สลับสถานะเป็น false
     }
 });
+
+// ========== โค้ดใหม่สำหรับปุ่มแสดง/ซ่อนทักษะ ==========
+
+// เลือก Element ที่เราจะใช้งาน
+const toggleButton = document.querySelector("#toggle-skills-button");
+const skillsSection = document.querySelector("#skills-section");
+
+// รอฟังเหตุการณ์ 'click' ที่ปุ่มใหม่
+toggleButton.addEventListener('click', function() {
+    // เมื่อคลิก ให้สลับคลาส 'hidden' บน skillsSection
+    skillsSection.classList.toggle('hidden');
+    
+});
